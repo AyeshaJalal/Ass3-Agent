@@ -1,0 +1,21 @@
+[project]
+name = "edu"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "AyeshaJalal", email = "ayeshajalal503@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "openai-agents>=0.0.14",
+    "python-dotenv>=1.1.0",
+]
+
+[project.scripts]
+edu = "edu:main"
+edu1 = "edu.edu_mentor:run_edu"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
